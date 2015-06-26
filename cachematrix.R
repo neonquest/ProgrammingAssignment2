@@ -54,7 +54,7 @@ cacheSolve <- function(x, ...) {
     m <- x$get()
     
     # Compute the inverse for the first time
-    inv <- solve(m)
+    inv <- solve(m, ...)
     
     # Store the inverse in the special "matrix" object
     x$setinv(inv)
